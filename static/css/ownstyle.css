@@ -1,0 +1,78 @@
+
+.color-fondo-login{
+  background-color: rgba(233, 30, 99, 0.53);
+}
+.p-centro{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h-centro{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.elm-ft-iz{
+  float: left;
+}
+.elm-ft-der{
+  float: right;
+}
+.centr-elmn{
+  position: absolute;
+  left: 45%;
+}
+
+.bord-elem{
+  width: 11.32vh;
+  border-radius: 5px;
+}
+.rowfs{
+  height: 40%;
+
+}
+
+/* .col-txt-elm{
+  color: #ffffff;
+}
+.colr-elemts{
+  background-color: #00bfa5;
+  width: 13vh;
+  -webkit-width: 5vh;
+  border-radius: 5px;
+
+  box-shadow: -12px 12px 20px -10px rgba(0,0,0,0.71);
+}
+
+.n-atomico{
+  float: left;
+}
+.p-atomico{
+  float: right;
+  text-align: right;
+  font-size: 70%;
+}
+.valencia{
+
+}
+.elc-negatividad{
+
+}
+.densidad{
+font-size: 70%;
+}
+.simbolo{
+  text-align: center;
+  font-size: 150%;
+}
+.n-elemento{
+  font-size: 80%;
+}
+.conf-elect{
+  text-align: center;
+} */

@@ -1,0 +1,2632 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tabala periodica UTMACH</title>
+    <link type="image/x-icon" href="{% static 'img/logo.png' %}" rel="shortcut icon"/>
+    {% block js %}
+    <script src="{% static 'js/jquery.min.js' %}" ></script>
+    <script src="{% static 'js/jquery.timeago.min.js' %}" ></script>
+    <script src="{% static 'js/prism.js' %}" ></script>
+    <script src="{% static 'js/search.js' %}" ></script>
+    <script src="{% static 'js/materialize.js' %}" ></script>
+    <script src="{% static 'js/init.js' %}" ></script>
+
+    {% endblock js %}
+
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/materialize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flag-icon.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/perfect-scrollbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ownstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'iconfont/material-icons.css' %}">
+    {% endblock css %}
+  </head>
+  <body>
+
+    <!-- fila 1 -->
+    <!-- .................................. hecho .................................. -->
+      <div class="row">
+          <div class="colr-elemts">
+            <a name="h" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light green lighten-2">
+              <h5 style="color:#ffffff;text-align:center;">H</h5>
+              <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; HIDROGENO &nbsp;</p>
+            </a>
+          </div>
+          <div id="h" class="modal">
+            <div class="modal-content">
+              <h4 class="center-align">HIDROGENO</h4>
+              <div class="row">
+                <div class="col s6">
+                  <h1 class="center-align" style="font-size:30vh;">H</h1>
+                </div>
+                <div class="col">
+                  <div class="chip">Numero atómico: 1</div><br>
+                  <div class="chip">Peso atómico: 1,00794</div><br>
+                  <div class="chip">Valencia: <u>+</u>1</div><br>
+                  <div class="chip">Electronegatividad: 2,2</div><br>
+                  <div class="chip">Densidad: 0,07</div><br>
+                  <div class="chip">Configuración electrónica: 1s<sup>1</sup></div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+            </div>
+          </div>
+          <!-- <img class="responsive-img centr-elmn" src="{% static 'img/imgc.jpg' %}" alt="" style="max-width:7%;"> -->
+          <div class="colr-elemts">
+            <a name="he" onclick="abrir(this.name)" class="bord-elem elm-ft-der waves-effect waves-light green darken-1">
+              <h5 style="color:#ffffff;text-align:center;">He</h5>
+              <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; HELIO &nbsp;</p>
+            </a>
+          </div>
+          <div id="he" class="modal">
+            <div class="modal-content">
+              <h4 class="center-align">HELIO</h4>
+              <div class="row">
+                <div class="col s6">
+                  <h1 class="center-align" style="font-size:30vh;">He</h1>
+                </div>
+                <div class="col">
+                  <div class="chip">Numero atómico: 2</div><br>
+                  <div class="chip">Peso atómico: 4,00260</div><br>
+                  <div class="chip">Valencia: 0</div><br>
+                  <div class="chip">Electronegatividad: -</div><br>
+                  <div class="chip">Densidad: 0,126</div><br>
+                  <div class="chip">Configuración electrónica: 1s<sup>2</sup></div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+            </div>
+          </div>
+      </div><!--....................... fin -->
+
+      <!-- fila 2 -->
+      <!-- .................................. hecho .................................. -->
+        <div class="row">
+            <div class="colr-elemts">
+              <a name="li" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan">
+                <h5 style="color:#ffffff;text-align:center;">Li</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;LITIO&nbsp;</p>
+              </a>
+            </div>
+            <div id="li" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">LITIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Li</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 3</div><br>
+                    <div class="chip">Peso atómico: 6,941</div><br>
+                    <div class="chip">Valencia: +1</div><br>
+                    <div class="chip">Electronegatividad: 0,98</div><br>
+                    <div class="chip">Densidad: 0,53</div><br>
+                    <div class="chip">Configuración electrónica: 1s<sup>2</sup> - 2s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- <img class="responsive-img centr-elmn" src="{% static 'img/imgc.jpg' %}" alt="" style="max-width:7%;"> -->
+            <div class="colr-elemts">
+              <a name="be" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Be</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; BERILIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="be" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">BERILIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Be</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 4</div><br>
+                    <div class="chip">Peso atómico: 9,01218</div><br>
+                    <div class="chip">Valencia: +2</div><br>
+                    <div class="chip">Electronegatividad: 1,57</div><br>
+                    <div class="chip">Densidad: 1,85</div><br>
+                    <div class="chip">Configuración electrónica: 1s<sup>2</sup> - 2s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- elemento -->
+            <div class="colr-elemts">
+              <a name="ne" onclick="abrir(this.name)" class="bord-elem elm-ft-der waves-effect waves-light green">
+                <h5 style="color:#ffffff;text-align:center;">Ne</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;NEON&nbsp;</p>
+              </a>
+            </div>
+            <div id="ne" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">NEON</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Ne</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 10</div><br>
+                    <div class="chip">Peso atómico: 20,1797</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: 1,20</div><br>
+                    <div class="chip">Configuración electrónica: 1s<sup>2</sup> - 2s<sup>2</sup> - 2p<sup>6</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- elemento -->
+            <div class="colr-elemts">
+              <a name="f" onclick="abrir(this.name)" class="bord-elem elm-ft-der waves-effect waves-light green">
+                <h5 style="color:#ffffff;text-align:center;">F</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;FLUOR&nbsp;</p>
+              </a>
+            </div>
+            <div id="f" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">FLUOR</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">F</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 9</div><br>
+                    <div class="chip">Peso atómico: 18,998403</div><br>
+                    <div class="chip">Valencia: - 1</div><br>
+                    <div class="chip">Electronegatividad: 3,98</div><br>
+                    <div class="chip">Densidad: 1,11</div><br>
+                    <div class="chip">Configuración electrónica: 1s<sup>2</sup> - 2s<sup>2</sup> - 2p<sup>5</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- elemento -->
+            <div class="colr-elemts">
+              <a name="o" onclick="abrir(this.name)" class="bord-elem elm-ft-der waves-effect waves-light green lighten-1">
+                <h5 style="color:#ffffff;text-align:center;">O</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;OXIGENO&nbsp;</p>
+              </a>
+            </div>
+            <div id="o" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">OXIGENO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">O</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 8</div><br>
+                    <div class="chip">Peso atómico: 15,9994</div><br>
+                    <div class="chip">Valencia: - 1, - 2</div><br>
+                    <div class="chip">Electronegatividad: 3,44</div><br>
+                    <div class="chip">Densidad: 1,4</div><br>
+                    <div class="chip">Configuración electrónica: 1s<sup>2</sup> - 2s<sup>2</sup> - 2p<sup>4</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- elemento -->
+            <div class="colr-elemts">
+              <a name="n" onclick="abrir(this.name)" class="bord-elem elm-ft-der waves-effect waves-light green lighten-1">
+                <h5 style="color:#ffffff;text-align:center;">N</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;NITROGENO&nbsp;</p>
+              </a>
+            </div>
+            <div id="n" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">NITROGENO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">N</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 7</div><br>
+                    <div class="chip">Peso atómico: 14,0067</div><br>
+                    <div class="chip">Valencia: <u>+</u> 1, <u>+</u> 2, <u>+</u> 3, 4,5</div><br>
+                    <div class="chip">Electronegatividad: 3,04</div><br>
+                    <div class="chip">Densidad: 0,81</div><br>
+                    <div class="chip">Configuración electrónica: 1s<sup>2</sup> - 2s<sup>2</sup> - 2p<sup>3</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- elemento -->
+            <div class="colr-elemts">
+              <a name="c" onclick="abrir(this.name)" class="bord-elem elm-ft-der waves-effect waves-light green lighten-1">
+                <h5 style="color:#ffffff;text-align:center;">C</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;CARBONO&nbsp;</p>
+              </a>
+            </div>
+            <div id="c" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">CARBONO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">C</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 6</div><br>
+                    <div class="chip">Peso atómico: 12,0107</div><br>
+                    <div class="chip">Valencia: 2, <u>+</u> 4</div><br>
+                    <div class="chip">Electronegatividad: 2,55</div><br>
+                    <div class="chip">Densidad: 2,26</div><br>
+                    <div class="chip">Configuración electrónica: 1s<sup>2</sup> - 2s<sup>2</sup> - 2p<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- elemento -->
+            <div class="colr-elemts">
+              <a name="b" onclick="abrir(this.name)" class="bord-elem elm-ft-der waves-effect waves-light red lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">B</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;BORO&nbsp;</p>
+              </a>
+            </div>
+            <div id="b" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">BORO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">B</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 5</div><br>
+                    <div class="chip">Peso atómico: 10,811</div><br>
+                    <div class="chip">Valencia: <u>+</u> 3</div><br>
+                    <div class="chip">Electronegatividad: 2,04</div><br>
+                    <div class="chip">Densidad: 2,34</div><br>
+                    <div class="chip">Configuración electrónica: 1s<sup>2</sup> - 2s<sup>2</sup> - 2p<sup>1</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+        </div><!--....................... fin -->
+
+        <!-- fila 3 -->
+        <!-- .................................. hecho .................................. -->
+          <div class="row">
+              <!-- ........................................ elemento -->
+              <div class="colr-elemts">
+                <a name="na" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan">
+                  <h5 style="color:#ffffff;text-align:center;">Na</h5>
+                  <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;SODIO&nbsp;</p>
+                </a>
+              </div>
+              <div id="na" class="modal">
+                <div class="modal-content">
+                  <h4 class="center-align">SODIO</h4>
+                  <div class="row">
+                    <div class="col s6">
+                      <h1 class="center-align" style="font-size:30vh;">Na</h1>
+                    </div>
+                    <div class="col">
+                      <div class="chip">Numero atómico: 11</div><br>
+                      <div class="chip">Peso atómico: 22,98976</div><br>
+                      <div class="chip">Valencia: +1</div><br>
+                      <div class="chip">Electronegatividad: 0,93</div><br>
+                      <div class="chip">Densidad: 0,97</div><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+                </div>
+              </div>
+              <!-- ........................................ elemento -->
+              <div class="colr-elemts">
+                <a name="mg" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                  <h5 style="color:#ffffff;text-align:center;">Mg</h5>
+                  <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; MAGNESIO &nbsp;</p>
+                </a>
+              </div>
+              <div id="mg" class="modal">
+                <div class="modal-content">
+                  <h4 class="center-align">MAGNESIO</h4>
+                  <div class="row">
+                    <div class="col s6">
+                      <h1 class="center-align" style="font-size:30vh;">Mg</h1>
+                    </div>
+                    <div class="col">
+                      <div class="chip">Numero atómico: 12</div><br>
+                      <div class="chip">Peso atómico: 24,304</div><br>
+                      <div class="chip">Valencia: +2</div><br>
+                      <div class="chip">Electronegatividad: 1,31</div><br>
+                      <div class="chip">Densidad: 1,74</div><br>
+                      <div class="chip">Configuración electrónica: 3s<sup>2</sup></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+                </div>
+              </div>
+
+
+              <!-- ........................................ elemento -->
+              <div class="colr-elemts">
+                <a name="ar" onclick="abrir(this.name)" class="bord-elem elm-ft-der waves-effect waves-light green">
+                  <h5 style="color:#ffffff;text-align:center;">Ar</h5>
+                  <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;ARGON&nbsp;</p>
+                </a>
+              </div>
+              <div id="ar" class="modal">
+                <div class="modal-content">
+                  <h4 class="center-align">ARGON</h4>
+                  <div class="row">
+                    <div class="col s6">
+                      <h1 class="center-align" style="font-size:30vh;">Ar</h1>
+                    </div>
+                    <div class="col">
+                      <div class="chip">Numero atómico: 18</div><br>
+                      <div class="chip">Peso atómico: 39,948</div><br>
+                      <div class="chip">Valencia: -</div><br>
+                      <div class="chip">Electronegatividad: -</div><br>
+                      <div class="chip">Densidad: 1,40</div><br>
+                      <div class="chip">Configuración electrónica: 3s<sup>2</sup> - 3p<sup>6</sup></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+                </div>
+              </div>
+              <!-- ........................................ elemento -->
+              <div class="colr-elemts">
+                <a name="cl" onclick="abrir(this.name)" class="bord-elem elm-ft-der waves-effect waves-light green">
+                  <h5 style="color:#ffffff;text-align:center;">Cl</h5>
+                  <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;CLORO&nbsp;</p>
+                </a>
+              </div>
+              <div id="cl" class="modal">
+                <div class="modal-content">
+                  <h4 class="center-align">CLORO</h4>
+                  <div class="row">
+                    <div class="col s6">
+                      <h1 class="center-align" style="font-size:30vh;">Cl</h1>
+                    </div>
+                    <div class="col">
+                      <div class="chip">Numero atómico: 17</div><br>
+                      <div class="chip">Peso atómico: 35,453</div><br>
+                      <div class="chip">Valencia: <u>+</u> 1, 3, 5, 7</div><br>
+                      <div class="chip">Electronegatividad: 3,16</div><br>
+                      <div class="chip">Densidad: 1,56</div><br>
+                      <div class="chip">Configuración electrónica: 3s<sup>2</sup> - 3p<sup>5</sup></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+                </div>
+              </div>
+              <!-- ........................................ elemento -->
+              <div class="colr-elemts">
+                <a name="s" onclick="abrir(this.name)" class="bord-elem elm-ft-der waves-effect waves-light green lighten-1">
+                  <h5 style="color:#ffffff;text-align:center;">S</h5>
+                  <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;AZUFRE&nbsp;</p>
+                </a>
+              </div>
+              <div id="s" class="modal">
+                <div class="modal-content">
+                  <h4 class="center-align">AZUFRE</h4>
+                  <div class="row">
+                    <div class="col s6">
+                      <h1 class="center-align" style="font-size:30vh;">S</h1>
+                    </div>
+                    <div class="col">
+                      <div class="chip">Numero atómico: 16</div><br>
+                      <div class="chip">Peso atómico: 32,065</div><br>
+                      <div class="chip">Valencia: <u>+</u> 2, 4, 6</div><br>
+                      <div class="chip">Electronegatividad: 2,58</div><br>
+                      <div class="chip">Densidad: 2,07</div><br>
+                      <div class="chip">Configuración electrónica: 3s<sup>2</sup> - 3p<sup>4</sup></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+                </div>
+              </div>
+              <!-- ........................................ elemento -->
+              <div class="colr-elemts">
+                <a name="p" onclick="abrir(this.name)" class="bord-elem elm-ft-der waves-effect waves-light green lighten-1">
+                  <h5 style="color:#ffffff;text-align:center;">P</h5>
+                  <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;FOSFORO&nbsp;</p>
+                </a>
+              </div>
+              <div id="p" class="modal">
+                <div class="modal-content">
+                  <h4 class="center-align">FOSFORO</h4>
+                  <div class="row">
+                    <div class="col s6">
+                      <h1 class="center-align" style="font-size:30vh;">P</h1>
+                    </div>
+                    <div class="col">
+                      <div class="chip">Numero atómico: 15</div><br>
+                      <div class="chip">Peso atómico: 30,97376</div><br>
+                      <div class="chip">Valencia: <u>+</u> 3, 5</div><br>
+                      <div class="chip">Electronegatividad: 2,19</div><br>
+                      <div class="chip">Densidad: 1,82</div><br>
+                      <div class="chip">Configuración electrónica: 3s<sup>2</sup> - 3p<sup>3</sup></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+                </div>
+              </div>
+              <!-- ........................................ elemento -->
+              <div class="colr-elemts">
+                <a name="si" onclick="abrir(this.name)" class="bord-elem elm-ft-der waves-effect waves-light red lighten-2">
+                  <h5 style="color:#ffffff;text-align:center;">Si</h5>
+                  <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;SILICIO&nbsp;</p>
+                </a>
+              </div>
+              <div id="si" class="modal">
+                <div class="modal-content">
+                  <h4 class="center-align">SILICIO</h4>
+                  <div class="row">
+                    <div class="col s6">
+                      <h1 class="center-align" style="font-size:30vh;">Si</h1>
+                    </div>
+                    <div class="col">
+                      <div class="chip">Numero atómico: 14</div><br>
+                      <div class="chip">Peso atómico: 28,0855</div><br>
+                      <div class="chip">Valencia: 2, <u>+</u> 4</div><br>
+                      <div class="chip">Electronegatividad: 1,9</div><br>
+                      <div class="chip">Densidad: 2,33</div><br>
+                      <div class="chip">Configuración electrónica: 3s<sup>2</sup> - 3p<sup>2</sup></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+                </div>
+              </div>
+              <!-- ........................................ elemento -->
+              <div class="colr-elemts">
+                <a name="al" onclick="abrir(this.name)" class="bord-elem elm-ft-der waves-effect waves-light cyan lighten-3">
+                  <h5 style="color:#ffffff;text-align:center;">Al</h5>
+                  <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;ALUMINIO&nbsp;</p>
+                </a>
+              </div>
+              <div id="al" class="modal">
+                <div class="modal-content">
+                  <h4 class="center-align">ALUMINIO</h4>
+                  <div class="row">
+                    <div class="col s6">
+                      <h1 class="center-align" style="font-size:30vh;">Al</h1>
+                    </div>
+                    <div class="col">
+                      <div class="chip">Numero atómico: 13</div><br>
+                      <div class="chip">Peso atómico: 26,98153</div><br>
+                      <div class="chip">Valencia: <u>+</u> 3</div><br>
+                      <div class="chip">Electronegatividad: 1,61</div><br>
+                      <div class="chip">Densidad: 2,70</div><br>
+                      <div class="chip">Configuración electrónica: 3s<sup>2</sup> - 3p<sup>1</sup></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+                </div>
+              </div>
+          </div><!--....................... fin -->
+
+
+          <!--........................................................ fila 4 -->
+          <div class="row">
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="k" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan">
+                <h5 style="color:#ffffff;text-align:center;">K</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;POTASIO&nbsp;</p>
+              </a>
+            </div>
+            <div id="k" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">POTASIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">K</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 19</div><br>
+                    <div class="chip">Peso atómico: 39,098</div><br>
+                    <div class="chip">Valencia: +1</div><br>
+                    <div class="chip">Electronegatividad: 0,82</div><br>
+                    <div class="chip">Densidad: 0,862</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 4s<sup>1</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="ca" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-1">
+                <h5 style="color:#ffffff;text-align:center;">Ca</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; CALCIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="ca" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">CALCIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Ca</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 20</div><br>
+                    <div class="chip">Peso atómico: 40,08</div><br>
+                    <div class="chip">Valencia: +2</div><br>
+                    <div class="chip">Electronegatividad: 1,0</div><br>
+                    <div class="chip">Densidad: 1,55</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 4s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="sc" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Sc</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; ESCANDIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="sc" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">ESCANDIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Sc</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 21</div><br>
+                    <div class="chip">Peso atómico: 44,955</div><br>
+                    <div class="chip">Valencia: +3</div><br>
+                    <div class="chip">Electronegatividad: 1,36</div><br>
+                    <div class="chip">Densidad: 2,989</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d<sup>1</sup> 4s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="ti" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Ti</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; TITANIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="ti" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">TITANIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Ti</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 22</div><br>
+                    <div class="chip">Peso atómico: 47,867</div><br>
+                    <div class="chip">Valencia: +4</div><br>
+                    <div class="chip">Electronegatividad: 1,54</div><br>
+                    <div class="chip">Densidad: 4,55</div><br>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="v" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">V</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; VANADIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="v" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">VANADIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">V</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 23</div><br>
+                    <div class="chip">Peso atómico: 50,94</div><br>
+                    <div class="chip">Valencia: 3, 5</div><br>
+                    <div class="chip">Electronegatividad: 1,63</div><br>
+                    <div class="chip">Densidad: 6,11</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d 4s 2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="cr" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Cr</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; CROMO &nbsp;</p>
+              </a>
+            </div>
+            <div id="cr" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">CROMO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Cr</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 24</div><br>
+                    <div class="chip">Peso atómico: 51,996</div><br>
+                    <div class="chip">Valencia: 2, 3, 6</div><br>
+                    <div class="chip">Electronegatividad: 1,66</div><br>
+                    <div class="chip">Densidad: 7,19</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d 5 4s 1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="mn" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Mn</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; MANGANESO &nbsp;</p>
+              </a>
+            </div>
+            <div id="mn" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">MANGANESO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Mn</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 25</div><br>
+                    <div class="chip">Peso atómico: 54,938</div><br>
+                    <div class="chip">Valencia: 2, 3, 4, 6, 7</div><br>
+                    <div class="chip">Electronegatividad: 1,55</div><br>
+                    <div class="chip">Densidad: 7,4</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d 5 4s 2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="fe" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Fe</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; HIERRO &nbsp;</p>
+              </a>
+            </div>
+            <div id="fe" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">HIERRO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Fe</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 26</div><br>
+                    <div class="chip">Peso atómico: 55,845</div><br>
+                    <div class="chip">Densidad: 7,894</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d 6 4s 2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="co" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Co</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; COBALTO &nbsp;</p>
+              </a>
+            </div>
+            <div id="co" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">COBALTO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Co</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 27</div><br>
+                    <div class="chip">Peso atómico: 58,693</div><br>
+                    <div class="chip">Valencia: 2, 3</div><br>
+                    <div class="chip">Electronegatividad: 1,88</div><br>
+                    <div class="chip">Densidad: 8,9</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d 7 4s 2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="ni" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Ni</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; NIQUEL &nbsp;</p>
+              </a>
+            </div>
+            <div id="ni" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">NIQUEL</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Ni</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 28</div><br>
+                    <div class="chip">Peso atómico: 58,693</div><br>
+                    <div class="chip">Valencia: 2, 3</div><br>
+                    <div class="chip">Electronegatividad: 1,91</div><br>
+                    <div class="chip">Densidad: 8,902</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d 8 4s 2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="cu" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Cu</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; COBRE &nbsp;</p>
+              </a>
+            </div>
+            <div id="cu" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">COBRE</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Cu</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 29</div><br>
+                    <div class="chip">Peso atómico: 63,546</div><br>
+                    <div class="chip">Valencia: 1, 2</div><br>
+                    <div class="chip">Electronegatividad: 1,9</div><br>
+                    <div class="chip">Densidad: 8,96</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d 10 4s 1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="zn" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Zn</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; ZINC &nbsp;</p>
+              </a>
+            </div>
+            <div id="zn" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">ZINC</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Zn</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 30</div><br>
+                    <div class="chip">Peso atómico: 65,39</div><br>
+                    <div class="chip">Valencia: 2</div><br>
+                    <div class="chip">Electronegatividad: 1,65</div><br>
+                    <div class="chip">Densidad: 7,133</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d 10 4s 2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="ga" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-3">
+                <h5 style="color:#ffffff;text-align:center;">Ga</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; GALIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="ga" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">GALIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Ga</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 31</div><br>
+                    <div class="chip">Peso atómico: 69,72</div><br>
+                    <div class="chip">Valencia: 3</div><br>
+                    <div class="chip">Electronegatividad: 1,6</div><br>
+                    <div class="chip">Densidad: 5,904</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d 10 4s2 p1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="ge" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light red lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Ge</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; GERMANIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="ge" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">GERMANIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Ge</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 32</div><br>
+                    <div class="chip">Peso atómico: 72,64</div><br>
+                    <div class="chip">Valencia: + 4, - 4</div><br>
+                    <div class="chip">Electronegatividad: 2,01</div><br>
+                    <div class="chip">Densidad: 5,323</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d 10 4s2 4p2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="as" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light red lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">As</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; ARSENICO &nbsp;</p>
+              </a>
+            </div>
+            <div id="as" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">ARSENICO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">As</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 33</div><br>
+                    <div class="chip">Peso atómico: 74,921</div><br>
+                    <div class="chip">Valencia: 3, 5</div><br>
+                    <div class="chip">Electronegatividad: 2,18</div><br>
+                    <div class="chip">Densidad: 74,921</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d 10 4s2 4p3</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="se" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light green lighten-1">
+                <h5 style="color:#ffffff;text-align:center;">Se</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; SELENIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="se" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">SELENIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Se</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 34</div><br>
+                    <div class="chip">Peso atómico: 78,96</div><br>
+                    <div class="chip">Valencia: -2, +4, +6</div><br>
+                    <div class="chip">Electronegatividad: 2,4</div><br>
+                    <div class="chip">Densidad: 4,79</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d 10 4s2 4p2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="br" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light green">
+                <h5 style="color:#ffffff;text-align:center;">Br</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; BROMO &nbsp;</p>
+              </a>
+            </div>
+            <div id="br" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">BROMO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Br</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 35</div><br>
+                    <div class="chip">Peso atómico: 79,904</div><br>
+                    <div class="chip">Valencia: -1, +1, 3, 5, 7</div><br>
+                    <div class="chip">Electronegatividad: 2,4</div><br>
+                    <div class="chip">Densidad: 4,79</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d 10 4s2 4p5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="kr" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light green">
+                <h5 style="color:#ffffff;text-align:center;">Kr</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; KRIPTON &nbsp;</p>
+              </a>
+            </div>
+            <div id="kr" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">KRIPTON</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Kr</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 36</div><br>
+                    <div class="chip">Peso atómico: 83,798</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: 0</div><br>
+                    <div class="chip">Densidad: 3,708</div><br>
+                    <div class="chip">Configuración electrónica: [Ar] 3d 10 4s2 4p</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+          </div>
+
+          <!--........................................................ fila 5 -->
+          <div class="row">
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="rb" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan">
+                <h5 style="color:#ffffff;text-align:center;">Rb</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;RUBIDIO&nbsp;</p>
+              </a>
+            </div>
+            <div id="rb" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">RUBIDIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Rb</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 37</div><br>
+                    <div class="chip">Peso atómico: 85,4678</div><br>
+                    <div class="chip">Valencia: +1</div><br>
+                    <div class="chip">Electronegatividad: 0,82</div><br>
+                    <div class="chip">Densidad: 1,532</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 5s<sup>1</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="sr" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-1">
+                <h5 style="color:#ffffff;text-align:center;">Sr</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; ESTRONCIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="sr" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">ESTRONCIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Sr</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 38</div><br>
+                    <div class="chip">Peso atómico: 87,62</div><br>
+                    <div class="chip">Valencia: +2</div><br>
+                    <div class="chip">Electronegatividad: 0,95</div><br>
+                    <div class="chip">Densidad: 2,54</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 5s 21s<sup>1</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="y" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Y</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; YTRIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="y" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">YTRIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Y</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 39</div><br>
+                    <div class="chip">Peso atómico: 88,905</div><br>
+                    <div class="chip">Valencia: +3</div><br>
+                    <div class="chip">Electronegatividad: 1,22</div><br>
+                    <div class="chip">Densidad: 4,47</div><br>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="zr" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Zr</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; CIRCONIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="zr" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">CIRCONIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Zr</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 40</div><br>
+                    <div class="chip">Peso atómico: 91,224</div><br>
+                    <div class="chip">Valencia: 2, 3, 4</div><br>
+                    <div class="chip">Electronegatividad: 1,33</div><br>
+                    <div class="chip">Densidad: 6,989</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 4d 25s 2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="nb" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Nb</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; NIOBIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="nb" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">NIOBIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Nb</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 41</div><br>
+                    <div class="chip">Peso atómico: 92,906</div><br>
+                    <div class="chip">Valencia: 2, 3, 4, 5</div><br>
+                    <div class="chip">Electronegatividad: 1,6</div><br>
+                    <div class="chip">Densidad: 8,57</div><br>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="mo" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Mo</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; MOLYBDENO &nbsp;</p>
+              </a>
+            </div>
+            <div id="mo" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">MOLYBDENO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Mo</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 42</div><br>
+                    <div class="chip">Peso atómico: 95,94</div><br>
+                    <div class="chip">Valencia: 2, 3, 4, 5, 6</div><br>
+                    <div class="chip">Electronegatividad: 2,16</div><br>
+                    <div class="chip">Densidad: 10,22</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 4d5 5s 1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="tc" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Tc</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; TECNESIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="tc" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">TECNESIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Tc</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 43</div><br>
+                    <div class="chip">Peso atómico: 98,90</div><br>
+                    <div class="chip">Valencia: 7</div><br>
+                    <div class="chip">Electronegatividad: 1,9</div><br>
+                    <div class="chip">Densidad: 11,50</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 4d 5 5s 2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="ru" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Ru</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; RUTENIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="ru" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">RUTENIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Ru</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 44</div><br>
+                    <div class="chip">Peso atómico: 101,07</div><br>
+                    <div class="chip">Valencia: 2, 3, 4, 6, 8</div><br>
+                    <div class="chip">Electronegatividad: 2,2</div><br>
+                    <div class="chip">Densidad: 12,2</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 4d7 5s1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="rh" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Rh</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; RODIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="rh" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">RODIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Rh</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 45</div><br>
+                    <div class="chip">Peso atómico: 102,07</div><br>
+                    <div class="chip">Valencia: 2, 3, 4, 6</div><br>
+                    <div class="chip">Electronegatividad: 2,28</div><br>
+                    <div class="chip">Densidad: 12,2</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 4d8 5s1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="pd" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Pd</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; PALADIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="pd" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">PALADIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Pd</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 46</div><br>
+                    <div class="chip">Peso atómico: 106,42</div><br>
+                    <div class="chip">Valencia: 2, 4</div><br>
+                    <div class="chip">Electronegatividad: 2,2</div><br>
+                    <div class="chip">Densidad: 12,0</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 4d10</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="ag" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Ag</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; PLATA &nbsp;</p>
+              </a>
+            </div>
+            <div id="ag" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">PLATA</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Ag</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 47</div><br>
+                    <div class="chip">Peso atómico: 107,87</div><br>
+                    <div class="chip">Valencia: 1</div><br>
+                    <div class="chip">Electronegatividad: 1,93</div><br>
+                    <div class="chip">Densidad: 10,95</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 4d10 5s1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="cd" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Cd</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; CADMIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="cd" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">CADMIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Cd</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 48</div><br>
+                    <div class="chip">Peso atómico: 112,40</div><br>
+                    <div class="chip">Valencia: 2</div><br>
+                    <div class="chip">Electronegatividad: 1,69</div><br>
+                    <div class="chip">Densidad: 8,65</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 4d10 5s2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="in" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-3">
+                <h5 style="color:#ffffff;text-align:center;">In</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; INDIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="in" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">INDIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">In</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 49</div><br>
+                    <div class="chip">Peso atómico: 114,81</div><br>
+                    <div class="chip">Valencia: 3</div><br>
+                    <div class="chip">Electronegatividad: 1,78</div><br>
+                    <div class="chip">Densidad: 7,31</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 4d10 5s2 5p1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="sn" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-3">
+                <h5 style="color:#ffffff;text-align:center;">Sn</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; ESTAÑO &nbsp;</p>
+              </a>
+            </div>
+            <div id="sn" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">ESTAÑO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Sn</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 50</div><br>
+                    <div class="chip">Peso atómico: 118,71</div><br>
+                    <div class="chip">Valencia: 2, 4</div><br>
+                    <div class="chip">Electronegatividad: 1,96</div><br>
+                    <div class="chip">Densidad: 7,26</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 4d10 5s2 5p2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="sb" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light red lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Sb</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; ANTIMONIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="sb" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">ANTIMONIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Sb</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 51</div><br>
+                    <div class="chip">Peso atómico: 121,76</div><br>
+                    <div class="chip">Valencia: -3, +3, +5</div><br>
+                    <div class="chip">Electronegatividad: 2,05</div><br>
+                    <div class="chip">Densidad: 6,61</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 4d10 5s2 5p3</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="te" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light red lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">te</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; TELURO &nbsp;</p>
+              </a>
+            </div>
+            <div id="te" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">TELURO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Te</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 52</div><br>
+                    <div class="chip">Peso atómico: 127,6</div><br>
+                    <div class="chip">Valencia: -2, +2, 4, 6</div><br>
+                    <div class="chip">Electronegatividad: 2,1</div><br>
+                    <div class="chip">Densidad: 6,24</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 4d10 5s2 5p4</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="i" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light green">
+                <h5 style="color:#ffffff;text-align:center;">I</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; IODO &nbsp;</p>
+              </a>
+            </div>
+            <div id="i" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">IODO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">I</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 53</div><br>
+                    <div class="chip">Peso atómico: 126,9</div><br>
+                    <div class="chip">Valencia: -1, +1, 3, 5, 7</div><br>
+                    <div class="chip">Electronegatividad: 2,5</div><br>
+                    <div class="chip">Densidad: 6,24</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 4d10 5s2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="xe" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light green">
+                <h5 style="color:#ffffff;text-align:center;">Xe</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; XENON &nbsp;</p>
+              </a>
+            </div>
+            <div id="xe" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">XENON</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Xe</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 54</div><br>
+                    <div class="chip">Peso atómico: 131,29</div><br>
+                    <div class="chip">Valencia: 0</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: 5,90</div><br>
+                    <div class="chip">Configuración electrónica: [Kr] 4d10 5s2 5p6</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+          </div>
+
+          <!--........................................................ fila 6 -->
+          <div class="row">
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="cs" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan">
+                <h5 style="color:#ffffff;text-align:center;">Cs</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;CESIO&nbsp;</p>
+              </a>
+            </div>
+            <div id="cs" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">CESIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">cs</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 55</div><br>
+                    <div class="chip">Peso atómico: 132,90545</div><br>
+                    <div class="chip">Valencia: +1</div><br>
+                    <div class="chip">Electronegatividad: 0,79</div><br>
+                    <div class="chip">Densidad: 1,90</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 6s<sup>1</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="la" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light purple lighten-3">
+                <h5 style="color:#ffffff;text-align:center;">La</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; LANTANO &nbsp;</p>
+              </a>
+            </div>
+            <div id="la" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">LANTANO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">La</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 57</div><br>
+                    <div class="chip">Peso atómico: 138,90547</div><br>
+                    <div class="chip">Valencia: +5</div><br>
+                    <div class="chip">Electronegatividad: 1,1</div><br>
+                    <div class="chip">Densidad: 4,47</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 5d<sup>1</sup> 6s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="ba" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Ba</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; BARIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="ba" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">BARIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Ba</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 56</div><br>
+                    <div class="chip">Peso atómico: 137,327</div><br>
+                    <div class="chip">Valencia: +2</div><br>
+                    <div class="chip">Electronegatividad: 0,89</div><br>
+                    <div class="chip">Densidad: 3,5</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 6s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="hf" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Hf</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; HAFNIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="hf" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">HAFNIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Hf</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 72</div><br>
+                    <div class="chip">Peso atómico: 178,49</div><br>
+                    <div class="chip">Valencia: +2, 3, 4</div><br>
+                    <div class="chip">Electronegatividad: 1,3</div><br>
+                    <div class="chip">Densidad: 13,1</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>2</sup> 6s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="ta" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Ta</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; TANTALIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="ta" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">TANTALIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Ta</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 73</div><br>
+                    <div class="chip">Peso atómico: 180,94788</div><br>
+                    <div class="chip">Valencia: +2, 3, 4, 5</div><br>
+                    <div class="chip">Electronegatividad: 1,5</div><br>
+                    <div class="chip">Densidad: 16,61</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>3</sup> 6s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="w" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">W</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; WOLFRAMIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="w" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">WOLFRAMIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">W</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 74</div><br>
+                    <div class="chip">Peso atómico: 183,84</div><br>
+                    <div class="chip">Valencia: +2, 3, 4, 5, 6</div><br>
+                    <div class="chip">Electronegatividad: 1,7</div><br>
+                    <!-- <div class="chip">Densidad: 10,22</div><br> -->
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>4</sup> 6s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="re" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Re</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; RENIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="re" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">RENIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Re</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 75</div><br>
+                    <div class="chip">Peso atómico: 186,207</div><br>
+                    <div class="chip">Valencia: +2, 4, 6, 7</div><br>
+                    <div class="chip">Electronegatividad: 1,9</div><br>
+                    <div class="chip">Densidad: 21,10</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>5</sup> 6s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="os" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Os</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; OSMIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="os" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">OSMIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Os</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 76</div><br>
+                    <div class="chip">Peso atómico: 190,23</div><br>
+                    <div class="chip">Valencia: +2, 3, 4, 6, 8</div><br>
+                    <div class="chip">Electronegatividad: 2,2</div><br>
+                    <div class="chip">Densidad: 22,6</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>8</sup> 6s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="ir" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Ir</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; IRIDIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="ir" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">IRIDIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Ir</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 77</div><br>
+                    <div class="chip">Peso atómico: 192,217</div><br>
+                    <div class="chip">Valencia: +2, 3, 4, 6</div><br>
+                    <div class="chip">Electronegatividad: 2,2</div><br>
+                    <div class="chip">Densidad: 22,6</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>7</sup> 6s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="pt" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Pt</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; PLATINO &nbsp;</p>
+              </a>
+            </div>
+            <div id="pt" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">PLATINO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Pt</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 78</div><br>
+                    <div class="chip">Peso atómico: 195,09</div><br>
+                    <div class="chip">Valencia: =2, 4</div><br>
+                    <div class="chip">Electronegatividad: 2,2</div><br>
+                    <div class="chip">Densidad: 21,4</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>8</sup> 6s<sup>1</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="au" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Au</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; ORO &nbsp;</p>
+              </a>
+            </div>
+            <div id="au" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">ORO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Au</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 79</div><br>
+                    <div class="chip">Peso atómico: 196,9665</div><br>
+                    <div class="chip">Valencia: +1, 3</div><br>
+                    <div class="chip">Electronegatividad: 2,4</div><br>
+                    <div class="chip">Densidad: 19,3</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>1</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="hg" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Hg</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; MERCURIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="hg" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">MERCURIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Hg</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 80</div><br>
+                    <div class="chip">Peso atómico: 200,592</div><br>
+                    <div class="chip">Valencia: +1, 2</div><br>
+                    <div class="chip">Electronegatividad: 1,9</div><br>
+                    <div class="chip">Densidad: 16,6</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="tl" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-3">
+                <h5 style="color:#ffffff;text-align:center;">Tl</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; TALIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="tl" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">TALIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Tl</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 81</div><br>
+                    <div class="chip">Peso atómico: 204,382</div><br>
+                    <div class="chip">Valencia: +1, 3</div><br>
+                    <div class="chip">Electronegatividad: 1,8</div><br>
+                    <div class="chip">Densidad: 11,85</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>2</sup> 6p<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="pb" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-3">
+                <h5 style="color:#ffffff;text-align:center;">Pb</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; PLOMO &nbsp;</p>
+              </a>
+            </div>
+            <div id="pb" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">PLOMO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Pb</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 82</div><br>
+                    <div class="chip">Peso atómico: 207,19</div><br>
+                    <div class="chip">Valencia: +2, 4</div><br>
+                    <div class="chip">Electronegatividad: 1,8</div><br>
+                    <div class="chip">Densidad: 11,4</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>2</sup> 6p<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="bi" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-3">
+                <h5 style="color:#ffffff;text-align:center;">Bi</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; BISMUTO &nbsp;</p>
+              </a>
+            </div>
+            <div id="bi" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">BISMUTO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Bi</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 83</div><br>
+                    <div class="chip">Peso atómico: 208,98040</div><br>
+                    <div class="chip">Valencia: +3, 5</div><br>
+                    <div class="chip">Electronegatividad: 1,9</div><br>
+                    <div class="chip">Densidad: 9,8</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>2</sup> 6p<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="po" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light red lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Po</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; POLONIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="po" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">POLONIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Po</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 84</div><br>
+                    <div class="chip">Peso atómico: 210</div><br>
+                    <div class="chip">Valencia: +2, 4, 6</div><br>
+                    <div class="chip">Electronegatividad: 2</div><br>
+                    <div class="chip">Densidad: 9,2</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>2</sup> 6p<sup>4</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="at" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light green">
+                <h5 style="color:#ffffff;text-align:center;">At</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; ASTATO &nbsp;</p>
+              </a>
+            </div>
+            <div id="at" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">ASTATO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">At</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 85</div><br>
+                    <div class="chip">Peso atómico: 210</div><br>
+                    <div class="chip">Valencia: +1, +3, 5, 7</div><br>
+                    <div class="chip">Electronegatividad: 2,2</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>2</sup> 6p<sup>5</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="rn" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light green">
+                <h5 style="color:#ffffff;text-align:center;">Rn</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; RADÓN &nbsp;</p>
+              </a>
+            </div>
+            <div id="rn" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">RADÓN</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Rn</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 86</div><br>
+                    <div class="chip">Peso atómico: 222</div><br>
+                    <div class="chip">Valencia: 0</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>2</sup> 6p<sup>8</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+          </div>
+
+
+          <!--........................................................ fila 7 -->
+          <div class="row">
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="fr" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan">
+                <h5 style="color:#ffffff;text-align:center;">Fr</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp;FRANCIO&nbsp;</p>
+              </a>
+            </div>
+            <div id="fr" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">FRANCIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Fr</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 87</div><br>
+                    <div class="chip">Peso atómico: 223</div><br>
+                    <div class="chip">Valencia: +1</div><br>
+                    <div class="chip">Electronegatividad: 0,8</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 7s<sup>1</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="ra" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Ra</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; RADIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="ra" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">RADIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Ra</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 88</div><br>
+                    <div class="chip">Peso atómico: 226</div><br>
+                    <div class="chip">Valencia: +2</div><br>
+                    <div class="chip">Electronegatividad: 0,9</div><br>
+                    <div class="chip">Densidad: 5,0</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 7s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="rf" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Rf</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; RUTHERFORDIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="rf" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">RUTHERFORDIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Rf</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 104</div><br>
+                    <div class="chip">Peso atómico: 261</div><br>
+                    <div class="chip">Valencia: +4</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup>6d<sup>2</sup>7s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="db" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Db</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; DUBNIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="db" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">DUBNIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Db</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 105</div><br>
+                    <div class="chip">Peso atómico: 262</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup> 6d<sup>3</sup> 7s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="sg" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Sg</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; SEABORGIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="sg" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">SEABORGIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Sg</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 106</div><br>
+                    <div class="chip">Peso atómico: 263</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup> 6d<sup>4</sup> 7s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="bh" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Bh</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; BOHRIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="bh" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">BOHRIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Bh</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 107</div><br>
+                    <div class="chip">Peso atómico: 262</div><br>
+                    <div class="chip">Valencia: +2, 3, 4, 5, 6</div><br>
+                    <div class="chip">Electronegatividad: 1,7</div><br>
+                    <!-- <div class="chip">Densidad: 10,22</div><br> -->
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup> 6d<sup>5</sup> 7s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="hs" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Hs</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; HASSIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="hs" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">HASSIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Hs</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 108</div><br>
+                    <div class="chip">Peso atómico: -</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup> 6d<sup>5</sup> 7s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="mt" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Mt</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; MEITNERIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="mt" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">MEITNERIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Mt</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 109</div><br>
+                    <div class="chip">Peso atómico: 266</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup> 6d<sup>7</sup> 7s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="ds" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Ds</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; DARMSTATIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="ds" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">DARMSTATIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Ds</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 110</div><br>
+                    <div class="chip">Peso atómico: 269</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup> 6d<sup>9</sup> 7s<sup>1</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="rg" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Rg</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; ROENTGENIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="rg" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">ROENTGENIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Rg</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 111</div><br>
+                    <div class="chip">Peso atómico: 272</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>1</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="cn" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Cn</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; COPERNICIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="cn" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">COPERNICIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Cn</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 112</div><br>
+                    <div class="chip">Peso atómico: -</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="nh" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">Nh</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; NIHONIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="nh" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">NIHONIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Nh</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 113</div><br>
+                    <div class="chip">Peso atómico: -</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="fl" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-3">
+                <h5 style="color:#ffffff;text-align:center;">FL</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; FLEROVIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="fl" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">FLEROVIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Fl</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 114</div><br>
+                    <div class="chip">Peso atómico: 271</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>2</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="mc" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-3">
+                <h5 style="color:#ffffff;text-align:center;">Mc</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; MOSCOVIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="mc" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">MOSCOVIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Mc</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 115</div><br>
+                    <div class="chip">Peso atómico: -</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>3</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="lv" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light cyan lighten-3">
+                <h5 style="color:#ffffff;text-align:center;">Lv</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; LIVERMORIO &nbsp;</p>
+              </a>
+            </div>
+            <div id="lv" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">LIVERMORIO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Lv</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 116</div><br>
+                    <div class="chip">Peso atómico: 208,98040</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>4</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="ts" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light red lighten-2">
+                <h5 style="color:#ffffff;text-align:center;">TS</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; TENESO &nbsp;</p>
+              </a>
+            </div>
+            <div id="ts" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">TENESO</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Ts</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 117</div><br>
+                    <div class="chip">Peso atómico: -</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>5</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+            <!-- ........................................ elemento -->
+            <div class="colr-elemts">
+              <a name="og" onclick="abrir(this.name)" class="bord-elem elm-ft-iz waves-effect waves-light green">
+                <h5 style="color:#ffffff;text-align:center;">Og</h5>
+                <p style="font-size: 55%;color:#ffffff;text-align:center;">&nbsp; OGANESÓN &nbsp;</p>
+              </a>
+            </div>
+            <div id="og" class="modal">
+              <div class="modal-content">
+                <h4 class="center-align">OGANESÓN</h4>
+                <div class="row">
+                  <div class="col s6">
+                    <h1 class="center-align" style="font-size:30vh;">Og</h1>
+                  </div>
+                  <div class="col">
+                    <div class="chip">Numero atómico: 118</div><br>
+                    <div class="chip">Peso atómico: -</div><br>
+                    <div class="chip">Valencia: -</div><br>
+                    <div class="chip">Electronegatividad: -</div><br>
+                    <div class="chip">Densidad: -</div><br>
+                    <div class="chip">Configuración electrónica: [Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>8</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <div class="row">
+            <div class="colr-elemts"><a class="bord-elem elm-ft-iz waves-effect waves-light withe">&nbsp;</a></div>
+          </div>
+          <div class="row">
+            <div class="colr-elemts"><a class="bord-elem elm-ft-iz waves-effect waves-light withe">&nbsp;</a></div>
+          </div>
+          <div class="row">
+            <div class="colr-elemts"><a class="bord-elem elm-ft-iz waves-effect waves-light withe">&nbsp;</a></div>
+          </div>
+          <div class="row">
+            <div class="colr-elemts"><a class="bord-elem elm-ft-iz waves-effect waves-light withe">&nbsp;</a></div>
+          </div>
+
+
+<!-- **************************************************Aqui va lo demas ************************************************** -->
+
+          <div class="row">
+            <div class="colr-elemts"><a class="bord-elem elm-ft-iz waves-effect waves-light withe">&nbsp;</a></div>
+          </div>
+          <div class="row">
+            <div class="colr-elemts"><a class="bord-elem elm-ft-iz waves-effect waves-light withe">&nbsp;</a></div>
+          </div>
+          <div class="row">
+            <div class="colr-elemts"><a class="bord-elem elm-ft-iz waves-effect waves-light withe">&nbsp;</a></div>
+          </div>
+          <div class="row">
+            <div class="colr-elemts"><a class="bord-elem elm-ft-iz waves-effect waves-light withe">&nbsp;</a></div>
+          </div>
+
+      <script type="text/javascript">
+      function abrir(idel) {
+        $('#'+idel).modal('open');
+      }
+
+      function abrirja() {
+        $('#ja1').modal('open');
+      }
+      </script>
+  </body>
+  <footer class="page-footer" style="position: fixed;bottom: 0;width: 100%;z-index:2;">
+    <img class="responsive-img" src="{% static 'img/logo.png' %}" alt="" style="max-width:7%;position: absolute;left: 0;margin-top:0.5%;">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <br>
+          <h5 class="white-text">UNIVERSIDAD TECNICA DE MACHALA</h5>
+
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">TABLA PERIODICA 2018</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">ING. DELLY SAN MARTIN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fixed-action-btn horizontal">
+      <a class="btn-floating btn-large red" onclick="abrirja()">
+        <i class="large material-icons">fingerprint</i>
+      </a>
+    </div>
+  <div id="ja1" class="modal">
+    <div class="modal-content" style="text-align:center;">
+      <h4>JUAN ANDRES IZA ARIAS</h4>
+      <img class="responsive-img" src="{% static 'img/005.jpg' %}" alt="" style="max-width:20%;border-radius: 10px;">
+      <h4>ANDREA STEFANIA GADVAY REQUELME</h4>
+      <img class="responsive-img" src="{% static 'img/an.jpg' %}" alt="" style="max-width:20%;border-radius: 10px;">
+      <h4>KLEINER ADRIAN GUERRERO AJILA</h4>
+      <img class="responsive-img" src="{% static 'img/kl.jpg' %}" alt="" style="max-width:20%;border-radius: 10px;">
+      <h4>FABRICIO ALEJANDRO ENCALADA ENRIQUEZ</h4>
+      <img class="responsive-img" src="{% static 'img/fbr.jpg' %}" alt="" style="max-width:20%;border-radius: 10px;">
+      <h4>MARVIN JAIR PARDO CASTILLO</h4>
+      <img class="responsive-img" src="{% static 'img/jr.jpg' %}" alt="" style="max-width:20%;border-radius: 10px;">
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn orange">ok</a>
+    </div>
+  </div>
+</html>
